@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title>Chatbot Interface</title>
+</head>
+<body>
+  <h1>Chatbot</h1>
+  <form method="POST" enctype="multipart/form-data">
+    <h3>Dokument per OCR verarbeiten:</h3>
+    <input type="file" name="file">
+    <input type="submit" value="Dokument hochladen">
+  </form>
+  <hr>
+  <form method="POST">
+    <h3>Frage eingeben:</h3>
+    <input type="text" name="question" style="width:300px;">
+    <input type="submit" value="Frage absenden">
+  </form>
+  <hr>
+  <div>
+    <h3>Ergebnis:</h3>
+    <p>{{ result|safe }}</p>
+  </div>
+</body>
+</html>
