@@ -1,0 +1,7 @@
+Flask
+pytesseract
+Pillow
+transformers
+torch
+faiss-cpu
+sentence-transformers
