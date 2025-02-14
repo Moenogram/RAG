@@ -26,3 +26,10 @@ def index():
 
 if __name__ == '__main__':
     app.run(debug=True)
+import atexit
+
+def clean_exit():
+    print("Server wird beendet, speichere Ressourcen...")
+    # Hier kannst du offene Prozesse beenden oder Dateien schließen
+
+atexit.register(clean_exit)
